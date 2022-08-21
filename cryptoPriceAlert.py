@@ -5,7 +5,7 @@ from datetime import datetime
 # # Add key in the key parameter in url before running the script
 
 ethereum_api_url = 'https://api.nomics.com/v1/currencies/ticker?key=&ids=ETH,BTC&interval=1d,30d&platform-currency=ETH&per-page=100&page=1'
-ifttt_webhook_url = "https://maker.ifttt.com/trigger/dev_test/json/with/key/bnyuBAEItT2GFAHslUQwi2"
+ifttt_webhook_url = "https://maker.ifttt.com/trigger/{}/json/with/key/"
 
 def get_ethereum_price():
      response = requests.get(ethereum_api_url)
@@ -21,6 +21,7 @@ def post_notification(event, value):
 
 def main():
     pass
+  
 
 if __name__ == '__main__':
     main()

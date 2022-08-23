@@ -3,8 +3,8 @@ import time
 from datetime import datetime
 
 # # Add key in the key parameter in url before running the script
-ethereum_api_url = 'https://api.nomics.com/v1/currencies/ticker?key=309e2d11ad8b5499d8c249e384a1c2d6418febd6&ids=ETH,BTC&interval=1d,30d&platform-currency=ETH&per-page=100&page=1'
-ifttt_webhook_url = "https://maker.ifttt.com/trigger/{}/with/key/bnyuBAEItT2GFAHslUQwi2"
+ethereum_api_url = 'https://api.nomics.com/v1/currencies/ticker?key=&ids=ETH,BTC&interval=1d,30d&platform-currency=ETH&per-page=100&page=1'
+ifttt_webhook_url = "https://maker.ifttt.com/trigger/{}/with/key/"
 
 def get_ethereum_price():
      response = requests.get(ethereum_api_url)
